@@ -1,0 +1,65 @@
+generated: '2026-09-04'
+method: probed
+source: live GET probes of the /.well-known/ named path list on every host this record knows
+note: >-
+  No /.well-known/ document is served on any Wakefit host. www.wakefit.co sits behind
+  a Cloudflare managed bot challenge that answers HTTP 403 ("Just a moment...") to every
+  non-browser client on every path, so the direct status below is the challenge, not the
+  origin. Reading the same URLs through a text-extraction proxy confirmed the origin
+  returns the storefront single-page-app shell (or its "UH - OH! We can't seem to find
+  the page" soft-404) for each path — an HTML shell is not a document, so every entry is
+  a miss. api.wakefit.co is a private, login-gated Django helpdesk dashboard and returns
+  a real 404 for every path. No WellKnown or SecurityTxt pointer is emitted: this file
+  records an absence, not a presence.
+hosts:
+- host: www.wakefit.co
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 403
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 403
+    file: null
+  - path: /.well-known/api-catalog
+    status: 403
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 403
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 403
+    file: null
+  - path: /.well-known/agent.json
+    status: 403
+    file: null
+- host: wakefit.co
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+    file: null
+- host: api.wakefit.co
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null

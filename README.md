@@ -64,5 +64,32 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Wakefit is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+Wakefit Innovations Limited (wakefit.co) is an Indian direct-to-consumer home and
+sleep-solutions company founded in 2016 in Bengaluru, selling memory-foam and orthopaedic
+mattresses, beds, sofas, wardrobes, bedding, decor and the Wakefit Zense connected-sleep
+line (Regul8 mattress temperature controller and Track8 contactless sleep tracker) through
+its own e-commerce storefront, an offline retail network and Indian marketplaces.
+
+## API surface
+
+**Wakefit publishes no public API.** As of 2026-09-04 there is no developer portal, no API
+reference, no machine-readable contract (OpenAPI, AsyncAPI, GraphQL SDL, gRPC/Protobuf or
+WSDL), no first-party SDK on any public package registry, no MCP server and no A2A agent
+card. `developer.wakefit.co` and `docs.wakefit.co` do not resolve; `api.wakefit.co` resolves
+but is a private, login-gated internal helpdesk dashboard that returns HTTP 404 for every
+discovery path. `www.wakefit.co` sits behind a Cloudflare managed bot challenge and is a
+client-rendered single-page app that answers unknown paths with a soft-404 body, so no
+`/.well-known/` document is served on any host.
+
+This profile therefore records company identity, the public pages Wakefit does serve, and
+the probes that establish the absence — an honest zero, not an unfinished pass.
+
+## Links
+
+- Website: <https://www.wakefit.co/>
+- Blog: <https://www.wakefit.co/blog/>
+- Contact / customer care: <https://www.wakefit.co/contact-us>
+- Help Center: <https://www.wakefit.co/helpcenter/faq/all>
+- Terms: <https://www.wakefit.co/terms>
+- Privacy: <https://www.wakefit.co/privacy>
+- Investor relations: <https://www.wakefit.co/investor-relations>

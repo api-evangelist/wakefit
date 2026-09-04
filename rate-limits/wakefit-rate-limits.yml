@@ -1,0 +1,11 @@
+generated: '2026-09-04'
+method: searched
+source: https://www.wakefit.co/
+limit_count: 0
+note: >-
+  Wakefit publishes no API and no developer documentation, so there are no published
+  rate limits, no documented rate-limit response headers (X-RateLimit-*, RateLimit-*,
+  Retry-After) and no documented exhaustion status code. The only throttling observable
+  from outside is the Cloudflare managed bot challenge in front of www.wakefit.co, which
+  is edge bot mitigation rather than an API rate-limit contract. Recorded as an honest zero.
+rate_limits: []

@@ -1,0 +1,51 @@
+# Wakefit
+
+> Wakefit Innovations Limited (wakefit.co) is an Indian direct-to-consumer home and
+> sleep-solutions company founded in 2016 in Bengaluru. It sells memory-foam and
+> orthopaedic mattresses, beds, sofas, wardrobes, bedding, decor and the Wakefit Zense
+> connected-sleep line through its own e-commerce storefront, an offline retail network
+> and Indian marketplaces.
+
+Wakefit publishes **no public API**. There is no developer portal, no API reference, no
+machine-readable contract (OpenAPI, AsyncAPI, GraphQL SDL, gRPC/Protobuf or WSDL), no
+SDK on any public package registry, no MCP server and no A2A agent card. The host
+api.wakefit.co exists but is a private, login-gated internal helpdesk dashboard, not a
+developer surface. Everything below is a human-facing page on the company's own site.
+
+## About
+
+- [Wakefit](https://www.wakefit.co/): Company storefront and home page.
+- [Investor Relations](https://www.wakefit.co/investor-relations): Corporate and investor disclosures for Wakefit Innovations Limited.
+- [Blog](https://www.wakefit.co/blog/): Sleep, home and product editorial, including coverage of the Wakefit Zense line.
+
+## Support
+
+- [Contact Us](https://www.wakefit.co/contact-us): Customer care phone, email and contact form.
+- [Help Center / FAQs](https://www.wakefit.co/helpcenter/faq/all): General customer FAQs.
+- [Returns and Refunds](https://www.wakefit.co/returns-and-refund): Return, refund and 100-night trial terms.
+- [Warranty](https://www.wakefit.co/warranty): Product warranty terms.
+
+## Legal
+
+- [Terms and Conditions](https://www.wakefit.co/terms)
+- [Privacy Policy](https://www.wakefit.co/privacy)
+
+## Commerce
+
+- [Bulk Orders](https://www.wakefit.co/bulk-orders): B2B and bulk ordering enquiry form.
+- [Become a Dealer](https://www.wakefit.co/furniture-store?become-partner=true): Retail dealership / partner enquiry form.
+- [Store Locator](https://www.wakefit.co/furniture-store): Offline retail store directory.
+
+## Optional
+
+- [Wakefit Zense (Android)](https://play.google.com/store/apps/details?id=wakefit.co.zense): Companion app for the Regul8 mattress temperature controller and Track8 contactless sleep tracker. Consumer app only; no documented public device or cloud API.
+- [Wakefit Zense (iOS)](https://apps.apple.com/in/app/wakefit-zense/id6502042730)
+
+## Notes for agents
+
+- www.wakefit.co is served behind a Cloudflare managed bot challenge: non-browser clients
+  receive HTTP 403 on every path, including /robots.txt and /.well-known/*.
+- The site is a client-rendered single-page app; unknown paths return HTTP 200 with a
+  soft-404 body rather than a 404 status.
+- Partner and bulk-order access is arranged through web enquiry forms and a sales
+  conversation, not through a self-serve API.

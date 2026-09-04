@@ -1,17 +1,35 @@
 aid: wakefit
 name: Wakefit
-description: 'Wakefit is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Wakefit Innovations Limited (wakefit.co) is an Indian direct-to-consumer
+  home and sleep-solutions company founded in 2016 in Bengaluru, selling memory-foam
+  and orthopaedic mattresses, beds, sofas, wardrobes, bedding, decor and the Wakefit
+  Zense connected-sleep line (Regul8 mattress temperature controller and Track8
+  contactless sleep tracker) through its own e-commerce storefront, an offline retail
+  network and Indian marketplaces. Wakefit operates as a retailer rather than a
+  platform: it publishes no public developer program, no API documentation and no
+  machine-readable API contract, and its storefront back end at api.wakefit.co is a
+  private, login-gated internal dashboard. This profile records the company identity
+  and the public pages it does serve.'
+image: https://www.wakefit.co/favicon.ico
 url: https://raw.githubusercontent.com/api-evangelist/wakefit/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment
 specificationVersion: '0.20'
 created: '2026-09-04'
 modified: '2026-09-04'
 tags:
 - Company
+- Retail
+- E-Commerce
+- Consumer Goods
+- Furniture
+- Home
+- Sleep
+- Direct To Consumer
+- India
+- Internet of Things
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +37,44 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/wakefit-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.wakefit.co/
+- type: Blog
+  url: https://www.wakefit.co/blog/
+- type: Support
+  url: https://www.wakefit.co/contact-us
+- type: HelpCenter
+  url: https://www.wakefit.co/helpcenter/faq/all
+- type: TermsOfService
+  url: https://www.wakefit.co/terms
+- type: PrivacyPolicy
+  url: https://www.wakefit.co/privacy
+- type: LLMsTxt
+  url: llms/wakefit-llms.txt
+- type: Plans
+  url: plans/wakefit-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/wakefit-rate-limits.yml
+x-enrichment:
+  date: '2026-09-04'
+  status: minimal
+  artifacts_added: 5
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Wakefit is a direct-to-consumer mattress and furniture retailer with no developer
+    program at all — no developer.wakefit.co or docs.wakefit.co exists in DNS, and the
+    only API-named host, api.wakefit.co, is a private Django helpdesk dashboard that
+    returns a real 404 for every discovery path and a login form at /wakefit/login/.
+  evidence:
+  - url: https://api.wakefit.co/openapi.json
+    status: 404
+  - url: https://api.wakefit.co/wakefit/login/
+    status: 200
+  - url: https://www.wakefit.co/.well-known/api-catalog
+    status: 403
+  checked: '2026-09-04'
