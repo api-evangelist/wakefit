@@ -2,13 +2,14 @@
   "repo": "wakefit",
   "feeds": [
     {
-      "source": "https://www.wakefit.co/",
-      "feed_url": "https://www.wakefit.co/blog/feed/",
-      "title": "",
-      "saved": 4,
-      "method": "discovered"
+      "source": "https://www.wakefit.co/blog/",
+      "error": "HTTPError"
+    },
+    {
+      "source": "https://www.wakefit.co/blog/feed/",
+      "error": "HTTPError"
     }
   ],
   "post_count": 4,
-  "fetched": "2026-10-03T12:30:02Z"
+  "fetched": "2026-10-10T13:15:00Z"
 }
